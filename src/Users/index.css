@@ -1,0 +1,15 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.cards{
+    display: flex;
+    width: 1800px;
+    flex-wrap: wrap;
+    margin:2% 15% 0 15%;
+
+}
+.butt{
+    margin-right: 27%;
+}
