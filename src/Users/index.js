@@ -13,7 +13,7 @@ const Users = () => {
     return(
         <div className="cards">
             <Popup trigger={
-                 <button type="submit" className="butt" onClick={(event)=>setPopup}>Login</button>
+                 <button type="submit" className="butt" >Login</button>
             }>
             </Popup>
        {loading && <h2>Loading users ...</h2>}
