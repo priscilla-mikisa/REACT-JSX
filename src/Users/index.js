@@ -2,20 +2,15 @@
 import { useGetUsers } from "./hooks/useGetUsers";
 import UserCard from "../Atoms/UserCard";
 import './index.css'
-import Popup from "reactjs-popup";
-import { useState } from "react";
+// import React,{ useState } from "react";
 
 
 const Users = () => {
     const{users,loading,errors} = useGetUsers();
-    const [popup,setPopup] = useState(<Users/>);
+   
     console.log({users});
     return(
-        <div className="cards">
-            <Popup trigger={
-                 <button type="submit" className="butt" >Login</button>
-            }>
-            </Popup>
+        <div className="cards">     
        {loading && <h2>Loading users ...</h2>}
         {errors.length>0 && <h2>{errors}</h2>}
         {users.length > 0
